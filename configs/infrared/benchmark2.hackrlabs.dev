@@ -1,7 +1,7 @@
 {
   "domainName": "benchmark2.hackrlabs.dev",
   "listenTo": ":25565",
-  "proxyTo": "172.17.0.4:25565",
+  "proxyTo": "172.21.0.3:25565",
   "onlineStatus": {
     "versionName": "1.18.1",
     "maxPlayers": 20,
