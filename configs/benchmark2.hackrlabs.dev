@@ -1,0 +1,17 @@
+{
+  "domainName": "benchmark2.hackrlabs.dev",
+  "listenTo": ":25565",
+  "proxyTo": "172.17.0.4:25565",
+  "onlineStatus": {
+    "versionName": "1.18.1",
+    "maxPlayers": 20,
+    "motd": "Benchmark II server is back!"
+  },
+  "offlineStatus": {
+    "versionName": "1.18.1",
+    "motd": "this server is asleep..."
+  },
+  "docker": {
+    "continaerName":"benchmark2"
+  }
+}

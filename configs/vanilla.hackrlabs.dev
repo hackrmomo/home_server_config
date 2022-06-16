@@ -1,0 +1,17 @@
+{
+  "domainName": "vanilla.hackrlabs.dev",
+  "listenTo": ":25565",
+  "proxyTo": "172.17.0.3:25565",
+  "onlineStatus": {
+    "versionName": "1.19",
+    "maxPlayers": 20,
+    "motd": "New Vanilla Server :O"
+  },
+  "offlineStatus": {
+    "versionName": "1.19",
+    "motd": "this server is asleep..."
+  },
+  "docker": {
+    "continaerName":"mc"
+  }
+}

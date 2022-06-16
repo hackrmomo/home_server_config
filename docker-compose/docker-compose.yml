@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  vanilla:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      - ./../instances/vanilla:/data
+  benchmark2:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "1.18.1"
+      FABRIC_LOADER_VERSION: "0.13.3"
+      FABRIC_LAUNCHER: "CF_BenchmarkII_1.0.7.jar"
+      MEMORY: "6G"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      - ./../instances/benchmark2:/data
+  infrared:
+    image: haveachin/infrared:latest
+    ports:
+      - 25565:25565
+    volumes:
+      - ./../configs/:/configs
+    restart: unless-stopped
+    expose:
+      - 25565
