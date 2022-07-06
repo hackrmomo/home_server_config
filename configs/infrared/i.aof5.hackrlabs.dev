@@ -1,0 +1,12 @@
+{
+  "domainName": "i.aof5.hackrlabs.dev",
+  "listenTo": ":25565",
+  "proxyTo": "172.22.0.3:25565",
+  "offlineStatus": {
+    "versionName": "1.18.2",
+    "motd": "this server is undergoing maintenance or just down..."
+  },
+  "docker": {
+    "continaerName":"aof5"
+  }
+}

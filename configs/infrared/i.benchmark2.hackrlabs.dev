@@ -1,5 +1,5 @@
 {
-  "domainName": "benchmark2.hackrlabs.dev",
+  "domainName": "i.benchmark2.hackrlabs.dev",
   "listenTo": ":25565",
   "proxyTo": "172.20.0.4:25565",
   "onlineStatus": {
